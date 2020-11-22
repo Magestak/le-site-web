@@ -1,0 +1,357 @@
+/*************reset*****************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**************fin reset***************/
+
+/* image de fond */
+body {
+	margin: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background: url(img/bkgd_page.jpg) no-repeat top center;
+	background-color: #f6f6f6;
+	background-size: cover;
+	color: #333
+	font-size: 100%;
+}
+
+/* wrappeur et génériques*/
+.wrapper {
+	width: 1024px;
+	margin: 60px auto;
+	padding-top: 30px;
+}
+.fl-l {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.roll-over-img:hover {
+	opacity: 0.5;
+}
+
+/************* Header ***********/
+
+/********** logo *************/
+#logo {
+	width: 160px;
+	padding: 0 20px;
+}
+
+/********** menu *************/
+#main-header {
+	position: relative;
+}
+.nav {
+	box-sizing: border-box;
+	width: auto;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+.nav li {
+	list-style: none;
+	border: 1px dashed #fff;
+}
+.nav li:nth-child(n+2):nth-child(-n+5) {
+	border-left: none;
+}
+.nav-link a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 150%;
+	display: block;
+	padding: 5px 20px;
+	text-align: center;
+}
+.nav-link a:hover {
+	color: #3b44b6;
+	background: #fff;
+}
+
+/**************** slogan *****************/
+#slogan {
+	color: #fff;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 70px;
+	font-family: serif;
+}
+.sigle {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: verdana;
+}
+.lettres {
+	font-size: 40px;
+	padding: 10px;
+}
+.devise {
+	font-size: 20px;
+}
+
+/***************** Fin Header *****************/
+
+/**************** Contenu page ****************/
+#main {
+	background: #f6f6f6;
+	width: auto;
+	padding: 50px 30px;
+}
+/**** partie haute *****/
+/** conteneur partie haute **/
+#contenu-haut {
+	width: auto;
+	height: auto;
+}
+.section-1, .section-2 {
+	display: flex;
+}
+.section-2 {
+	margin-top: 30px;
+}
+/** bordures images gauche **/
+.border-img {
+	border: 3px solid #000;
+}
+/** paragraphes milieu **/
+.para-1, .para-2 {
+	width: 300px;
+	padding: 10px 20px 10px 10px;
+}
+.para-1 h2, .para-2 h2 {
+	font-family: Helvetica;
+	font-size: 1.9em;
+	font-weight: bold;
+	line-height: 120%
+}
+.meta {
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+.meta-auteur {
+	color: #38b4b4;
+}
+.meta-date {
+	color: #aaa;
+	font-style: italic;
+}
+.paragraphe {
+	font-size: 1.1em;
+	line-height: normal;
+}
+/** images droite **/
+.rapport-1, .rapport-2 {
+	width: 270px;
+	text-align: center;
+}
+.rapport-1 {
+	padding-top: 40px;
+	padding-left: 20px;
+}
+/** liens "télécharger" (+"consulter" partie centrale) **/
+.main-link {
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #a22755;
+	text-decoration: none;
+}
+.roll-over-main-link:hover {
+	color: #ccc;
+}
+
+/*********** partie centrale ************/
+/** conteneur partie centrale **/
+#contenu-milieu {
+	margin-top: 150px;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+/** image gauche apparition/disparition **/
+.bloc-saut {
+	width: 484px;
+	position: relative;
+}
+.border-img-saut {
+	border: 2px solid #000;
+}
+/** roll over apparition/disparition **/
+.roll-over-img-saut:hover .fond-cache {
+	display: block;
+}
+.fond-cache {
+	position: absolute;
+	top: 0;
+	left:0;
+	background-color: rgba(0,0,0,0.3);
+	padding-top: 180px;
+	color: #fff;
+	width: 484px;
+	height: 304px;
+	text-align: center;
+	display: none;
+
+}
+.fond-cache h2 {
+	font-size: 30px;
+}
+.fond-cache p {
+	font-size: 24px;
+	line-height: 120%
+}
+/** bouton "sauter" **/
+.button {
+	background: #0c7f06;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 30px;
+	padding: 10px 50px;
+	border: none;
+	text-align: center;
+}
+.roll-over-button:hover {
+	color: #ccc;
+}
+/** fin apparition/disparition **/
+
+/*************** Bloc vignettes ****************/
+.bloc-book-vignettes {
+	width: 470px;
+	background-color: #ddeae4;
+	margin-left: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.vignette {
+	width: 227px;
+	min-height: 215px;
+	padding-top: 20px;
+	border: 5px solid #305a47;
+	text-align: center;
+}
+.vignette:nth-child(odd) {
+	border-right: none;
+}
+.vignette:nth-child(n):nth-child(-n+2) {
+	border-bottom: none;
+}
+
+/************************ Partie basse = formulaire *************/
+/** conteneur formulaire **/
+#contenu-bas {
+	width: auto;
+	margin-top: 70px;
+	background-color: #ddeae4;
+	border: 5px solid #305a47;
+}
+#formulaire {
+	width: 480px;
+	margin: 50px auto;
+}
+#formulaire h1 {
+	font-size: 20px;
+	padding: 15px 0;
+}
+#nom {
+	width: 480px;
+	padding: 5px;
+	border-color: rgba(0,0,0,0.2);
+}
+#prenom {
+	width: 230px;
+	margin: 10px 0;
+	padding: 5px;
+	border-color: rgba(0,0,0,0.2);
+}
+#email {
+	width: 230px;
+	margin: 10px 0px 10px 6px;
+	padding: 5px;
+	border-color: rgba(0,0,0,0.2);
+}
+#message {
+	width: 480px;
+	height: 150px;
+	padding: 5px;
+	font-family: arial, sans-serif;
+	font-size: 0.9em;
+}
+input[type=submit] {
+	width: 492px;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #305a47;
+	color: #fff;
+	border: thin solid;
+}
+input[type=submit]:hover {
+	background-color: #109177;
+}
+/** fin formulaire **/
+
+/************ pied de page ****************/
+#main-footer {
+	box-sizing: border-box;
+	margin-top: 100px;
+	height: 40px;
+	background-color: #305a47;
+	text-align: center;
+	padding: 5px
+}
+.main-footer li {
+	list-style: none;
+	display: inline;
+	margin: 0 20px;
+}
+.main-footer a {
+	color:#fff;
+	text-decoration: none;
+}
+.main-footer a:hover {
+	color: #ccc;
+}
